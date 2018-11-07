@@ -1,0 +1,49 @@
+{
+  "name": "PACKAGE_NAME",
+  "version": "0.0.0",
+  "description": "DESCRIPTION",
+  "main": "./lib/index.js",
+  "reveal": true,
+  "scripts": {
+    "build": "rollup -c ./rollup.config.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/USER_NAME/PACKAGE_NAME.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "YOUR_NAME",
+    "email": "USER_EMAIL",
+    "url": "https://github.com/USER_NAME"
+  },
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^16.7.0-alpha.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "7.1.5",
+    "@babel/core": "7.1.5",
+    "@babel/preset-env": "7.1.5",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-preset-minify": "^0.5.0",
+    "jest": "^23.6.0",
+    "jsdom": "^13.0.0",
+    "rollup": "^0.67.0",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-filesize": "^5.0.1",
+    "rollup-plugin-node-resolve": "^3.4.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "roots": [
+      "./src"
+    ]
+  }
+}
